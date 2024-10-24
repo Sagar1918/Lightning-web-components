@@ -1,0 +1,32 @@
+<template>
+    <lightning-card title="getObjectInfo adapter using function">
+        <div class="slds-var-p-around_medium">
+        <template if:true={adapterParams}>
+        <div>DefaultRecordTypeId: {adapterParams.defaultRecordTypeId}</div>
+        <div>Object Name: {adapterParams.apiName}</div>
+    </template>
+</div>
+    </lightning-card>
+
+    <lightning-card title="getObjectInfo adapter using property">
+        <div class="slds-var-p-around_medium">
+        <template if:true={objectInfoProperty.data}>
+        <div>DefaultRecordTypeId: {objectInfoProperty.data.defaultRecordTypeId}</div>
+        <div>Object Name: {objectInfoProperty.data.apiName}</div>
+    </template>
+    </div>
+    </lightning-card>
+
+    <lightning-card title="getObjectInfos adapter using function">
+        <div class="slds-var-p-around_medium">
+        <template if:true={objectInfos}>
+         <template for:each={objectInfos.results} for:item="item">   
+        <div key={item.result.apiName}>
+            <div><strong>Object: </strong>{item.result.apiName}</div>
+            <div><strong>Default Record Id: </strong>{item.result.defaultRecordTypeId}</div>
+        </div>
+    </template>
+    </template>
+    </div>
+    </lightning-card>
+</template>

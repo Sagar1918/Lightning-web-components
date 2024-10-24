@@ -1,0 +1,108 @@
+<template>
+  <div class="grid-view">
+    <lightning-card title="Navigation to Home">
+        <lightning-button 
+          class="slds-var-p-around_medium"
+          variant="brand"
+          label="Navigate to Home" 
+          onclick={handleNavigateToHome} 
+        ></lightning-button>
+    </lightning-card>
+
+    <lightning-card title="Navigation to chatter">
+        <lightning-button 
+          class="slds-var-p-around_medium"
+          variant="brand"
+          label="Navigate to Chatter" 
+          onclick={handleNavigateToChatter} 
+        ></lightning-button>
+    </lightning-card>
+
+    <lightning-card title="Navigation to New Record Creation">
+      <lightning-button 
+        class="slds-var-p-around_medium"
+        variant="brand"
+        label="Navigate to new Record" 
+        onclick={navigateToNewRecord} 
+      ></lightning-button>
+  </lightning-card>
+
+  <lightning-card title="Navigation to New Record With Default Values">
+    <lightning-button 
+      class="slds-var-p-around_medium"
+      variant="brand"
+      label="Navigate to new Record Default values" 
+      onclick={navigateToNewRecordWithDefault} 
+    ></lightning-button>
+</lightning-card>
+
+<lightning-card title="Navigation to List View">
+  <lightning-button 
+    class="slds-var-p-around_medium"
+    variant="brand"
+    label="Navigate to List View" 
+    onclick={navigateToListView} 
+  ></lightning-button>
+</lightning-card>
+
+<lightning-card title="Navigation to Record Page in View , Edit Mode">
+  <lightning-button 
+    class="slds-var-p-around_medium"
+    variant="brand"
+    label="View Record" 
+    onclick={recordViewMode} 
+  ></lightning-button>
+  <lightning-button 
+    class="slds-var-m-left_medium"
+    variant="brand"
+    label="Edit Record" 
+    onclick={recordEditMode} 
+  ></lightning-button>
+</lightning-card>
+
+<lightning-card title="Navigation to List View">
+  <lightning-button 
+    class="slds-var-p-around_medium"
+    variant="brand"
+    label="Navigate to Tab" 
+    onclick={navigateToTab} 
+  ></lightning-button>
+</lightning-card>
+
+<lightning-card title="Navigation to Related Record">
+  <lightning-button 
+    class="slds-var-p-around_medium"
+    variant="brand"
+    label="Navigate to Related Record" 
+    onclick={navigateToRelatedRecord} 
+  ></lightning-button>
+</lightning-card>
+
+<lightning-card title="Navigation to Web page">
+  <lightning-button 
+    class="slds-var-p-around_medium"
+    variant="brand"
+    label="Navigate to External Page" 
+    onclick={navigateToWebPage} 
+  ></lightning-button>
+</lightning-card>
+
+<lightning-card title="Navigation to LWC page">
+  <lightning-button 
+    class="slds-var-p-around_medium"
+    variant="brand"
+    label="Navigate to LWC Page" 
+    onclick={navigateToLwcPage} 
+  ></lightning-button>
+</lightning-card>
+
+<lightning-card title="Navigation to VF page">
+  <lightning-button 
+    class="slds-var-p-around_medium"
+    variant="brand"
+    label="Navigate to VF Page" 
+    onclick={navigateToVfPage} 
+  ></lightning-button>
+</lightning-card>
+</div>
+</template>

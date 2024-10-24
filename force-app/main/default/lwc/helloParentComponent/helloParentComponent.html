@@ -1,0 +1,24 @@
+<template>
+  <lightning-card  variant="brand">
+    <div>
+      <h1>Hello From Parent Component</h1>
+      <template if:true={isChildVisible}>
+            <lightning-button 
+              variant="brand"
+              label="Remove child" 
+              onclick={handleShow} 
+            ></lightning-button>
+      </template>
+      <template if:false={isChildVisible}>
+            <lightning-button 
+              variant="brand"
+              label="Show child" 
+              onclick={handleShow} 
+            ></lightning-button>
+      </template>
+      <template if:true={isChildVisible}>
+            <c-hello-child-component></c-hello-child-component>
+      </template>
+</div>
+  </lightning-card>
+</template>

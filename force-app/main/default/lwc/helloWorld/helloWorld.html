@@ -1,0 +1,16 @@
+<template>
+    <lightning-card icon-name="standard:account" variant="base">
+        <h1>{details.name}</h1>
+        <div class="slds-var-m-around_medium">
+            <input type="text" onkeyup={changeHandler} />
+        </div>
+        <h2>I'm an {details.title} developer</h2>
+    </lightning-card>  
+
+    <lightning-card icon-name="standard:account" variant="base">
+      <div class="slds-var-m-around_medium">
+          <h1>First user is: {userName}</h1>
+          <h2>{sumOfTwo}</h2>
+      </div>
+    </lightning-card>
+</template>

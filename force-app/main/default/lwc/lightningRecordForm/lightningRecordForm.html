@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Lightning Record Form">
+        <lightning-record-form
+        record-id={recordId}
+        object-api-name="Account"
+        fields={fields}
+        columns="2"
+        onsuccess={successHandler}
+    >
+    </lightning-record-form>
+    </lightning-card>
+    
+    <template if:true={accountData.length}>
+        <ul>
+            <template for:each={accountData} for:item="data">
+                <lightning-card key={data.Id}>
+                <li>Name: {data.Name.value}, Industry: {data.Industry.value}, Phone: {data.Phone.value}</li>
+               </lightning-card>
+            </template>
+        </ul>
+    </template>
+</template>

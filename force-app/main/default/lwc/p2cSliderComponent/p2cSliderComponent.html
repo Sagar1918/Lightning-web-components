@@ -1,0 +1,14 @@
+<template>
+    <lightning-card>
+     <div class="slds-var-m-bottom_medium">
+        <lightning-slider  
+          label="Volume" 
+          max="100"
+          min="0"
+          type="horizontal"
+          value={val}
+          onchange={changeHandler}
+        ></lightning-slider>
+     </div>
+    </lightning-card>
+</template>

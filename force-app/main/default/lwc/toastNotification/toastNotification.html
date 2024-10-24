@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Toast Notifications Demo">
+        <lightning-button class="slds-var-m-right_medium"
+          variant="brand"
+          label="Show Success" 
+          onclick={toastHandlerSuccess} 
+        ></lightning-button>
+
+        <lightning-button class="slds-var-m-right_medium"
+        variant="brand"
+        label="Show Warning" 
+        onclick={toastHandlerWarning} 
+      ></lightning-button>
+
+      <lightning-button class="slds-var-m-right_medium"
+        variant="brand"
+        label="Show Error" 
+        onclick={toastHandlerError} 
+      ></lightning-button>
+
+      <lightning-button class="slds-var-m-right_medium"
+        variant="brand"
+        label="Show Info" 
+        onclick={toastHandlerInfo} 
+      ></lightning-button>
+    </lightning-card>
+</template>

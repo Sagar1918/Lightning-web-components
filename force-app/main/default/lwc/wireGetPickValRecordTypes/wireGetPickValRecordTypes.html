@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="get PickList Values Record Types adapter"> 
+        <div class="slds-var-p-around_medium">
+            <template if:true={ratingOptions}>
+                <lightning-combobox
+            name="Rating"
+            label="Rating"
+            value={selectedRating}
+            placeholder="Select Rating"
+            options={ratingOptions}
+            onchange={handleChange} ></lightning-combobox>
+            <p>Selected value is: <strong>{selectedRating}</strong></p>
+            </template>
+
+            <template if:true={industryOptions}>
+                <lightning-combobox
+                name="Industry"
+                label="Industry"
+                value={selectedIndustry}
+                placeholder="Select Industry"
+                options={industryOptions}
+                onchange={handleChange} ></lightning-combobox>
+                <p>Selected value is: <strong>{selectedIndustry}</strong></p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

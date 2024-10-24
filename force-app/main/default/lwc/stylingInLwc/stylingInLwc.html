@@ -1,0 +1,20 @@
+<template>
+    <div class="slds-box box" title="SLDS">
+        <p>This is a slds box Component.</p>
+        <span class="slds-badge">Reject</span>
+        <span class="slds-badge slds-theme_success">Successful</span>
+    </div>
+
+    <div  class="div2" title=" SLDS Design Token">
+        <lightning-card  variant="base">
+          <h1 class="design">This line is styled using Design Token.</h1> 
+        </lightning-card>
+    </div>
+<lightning-input 
+  type="number"
+  label="%"
+  value={percent}
+  onchange={changeHandler}
+></lightning-input>
+    <div style="percentage">I'm a Dynamic One</div>
+</template>

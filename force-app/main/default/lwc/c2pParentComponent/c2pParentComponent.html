@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Child to Parent comm using Event">
+      <div class="slds-var-m-around_medium">
+        <!--This button used to show the Modal-->
+        <lightning-button 
+          variant="brand"
+          label="Show Modal" 
+          onclick={handleShow} 
+        ></lightning-button>
+        <h1>{msg}</h1>
+
+        <template if:true={showModal}>
+            <c-c2p-modal-component
+            onclose={handleClose}
+            ></c-c2p-modal-component>
+        </template>
+      </div>
+    </lightning-card>
+</template>
