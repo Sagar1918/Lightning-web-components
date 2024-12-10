@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="Custom Carousel">
+    <div class="parent">
+        <template if:true={slidesData}>
+    <template for:each={slidesData} for:item="slide">
+        <div  class={slide.cardClasses} key={slide.slideIndex}>
+            <div class="slide-numbers">{slide.slideIndex}/{slidesData.length}</div>
+        <img src={slide.image} alt="slide" />
+        <div class="text-section">
+            <h3 class="slds-text-heading_large">{slide.heading}</h3>
+            <div class="slds-text-heading_small">{slide.description}</div>
+        </div>
+       </div>
+    </template>
+</template>
+    <a class="prev" onclick={backSlide}>&#10094;</a>
+    <a class="next" onclick={forwardSlide}>&#10095;</a>
+</div>
+<div class="slds-text-align_center dot-top">
+    <template for:each={slidesData} for:item="slide">
+        <span class={slide.dotClasses} key={slide.slideIndex}></span>
+    </template>
+</div>
+</lightning-card>
+</template>

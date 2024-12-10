@@ -1,7 +1,6 @@
 import { api, LightningElement } from 'lwc';
 import {NavigationMixin} from 'lightning/navigation';
 import {encodeDefaultFieldValues} from 'lightning/pageReferenceUtils';
-import FirstName from '@salesforce/schema/Contact.FirstName';
 
 export default class NavigateToHome extends NavigationMixin(LightningElement) {
     //1. This function helpful for navigate to home

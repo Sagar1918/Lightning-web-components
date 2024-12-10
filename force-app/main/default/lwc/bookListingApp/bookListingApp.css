@@ -1,0 +1,10 @@
+/* .flex-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.box-size{
+    width: 270px;
+    height: 320px;
+}

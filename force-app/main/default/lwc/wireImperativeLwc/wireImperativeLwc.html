@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Apex Imperative Demo">
+        <div class="slds-var-p-around_medium">
+            <lightning-button 
+              class="slds-var-m-bottom_medium"
+              variant="brand"
+              label="Call Apex Imperative" 
+              onclick={handleClick} 
+            ></lightning-button>
+
+            <template if:true={accounts}>
+                <template for:each={accounts} for:item="account">
+                    <div class="slds-box slds-box_xx-small" key={account.id}>
+                        <lightning-button
+                          id={account.id} 
+                          variant="base"
+                          label={account.Name} 
+                          onclick={recordEditMode} 
+                        ></lightning-button>
+                        <p>Type: {account.Type}</p>
+                    </div>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Related List Records">
+        <div class="slds-p-around_medium">
+            <template if:true={relatedRecords}>
+                <template for:each={relatedRecords} for:item="rec">
+                    <div key={rec.fields.Id.value}>{rec.fields.Name.value}</div>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

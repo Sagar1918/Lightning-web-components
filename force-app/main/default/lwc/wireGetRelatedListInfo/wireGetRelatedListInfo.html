@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title="getRelatedListsInfo Adapter Demo">
+        <b>Related List on Account Record Page</b>
+        <template for:each={relatedData} for:item="list">
+            <p key={list.label}>{list.label}</p>
+        </template>
+    </lightning-card>
+</template>

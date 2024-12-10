@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Get Related List count">
+        <div class="slds-p-around_medium">
+            <template if:true={relatedData}>
+                <div>
+                    Related Contacts Count in an Account: {relatedData.count}
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>
